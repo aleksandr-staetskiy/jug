@@ -442,4 +442,9 @@ a:hover {
   margin-left: 15px;
 }
 
+/* line 3, ../scss/modal-report.scss */
+.modal-report__descr {
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=style.css.map */
