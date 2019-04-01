@@ -1,0 +1,29 @@
+.modal {
+    &__name {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__city {
+        text-align: center;
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    &__photo-wrap {
+        width: 40%;
+        height: 180px;
+        border-radius: 12%;
+        overflow: hidden;
+    }
+
+    &__photo {
+        max-width: 100%;
+    }
+
+    &__descr {
+        width: 55%;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}

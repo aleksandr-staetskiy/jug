@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JUG test</title>
+    <!-- google fonts including -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!-- fa icons including -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+    <!-- tooltype -->
+    <link rel="stylesheet" href="css/tipped.css">
+    <!-- modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- styly normalizer including -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <noscript>У вас отключен JavaScript. Это пугает.</noscript>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row header__wrapper">
+                <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 114 40">
+                    <title>jpoint_logo</title>
+                    <g fill="#786154" fill-rule="nonzero">
+                        <path d="M16.352 2.17c.586 0 1.084-.479 1.084-1.085C17.436.498 16.96 0 16.352 0c-.585 0-1.084.477-1.084 1.085 0 .585.477 1.084 1.084 1.084zm2.559 32.812c.13.15.26.303.412.433-.108-.195-.217-.368-.325-.564-.022-.065-.065-.108-.087-.173-.542-.89-1.301-3.08-1.301-3.08-1.15-3.6-1.17-7.373-.695-11.169-1.387 2.451-1.56 8.393.695 12.622.803 1.301 1.3 1.909 1.3 1.909v.022zm-1.301 1.54c-3.427.216-7.222-.803-10.41-2.82-2.71-1.735-5.855-4.923-6.332-8.263-.326-2.385.043-4.359 1.952-5.487.585-.325.932-.434 1.388-.434.26 0 .541.044.91.087 1.974.26 5.444.434 9.412.434 1.063 0 2.104-.022 3.08-.044l.585-.02c.239 0 .477-.023.716-.023a95.271 95.271 0 0 0 3.189-.174c.737-.064 1.366-.13 1.908-.195.347-.043.607-.108.867-.108.282 0 .542.065.911.282.412.26.759.672 1.02 1.345.411 1.17.39 4.077.086 6.592-.324 2.755-.868 4.707-3.101 6.55a9.287 9.287 0 0 1-1.67 1.106s-2.038 1.063-4.49 1.172h-.021zm1.3-7.353c.847.391 2.04.543 3.19.478 1.67-.087 3.274-.63 3.6-1.497-1.15.586-2.343.89-3.6.998-1.497.13-3.19-.152-3.19-.152-.129-.022-.28-.044-.411-.065.13.086.26.151.412.238zm-2.558 10.15c2.95-.065 4.815-.39 6.03-.824.368-.13.65-.282.801-.456a.571.571 0 0 0 .153-.303v-.065c-.023-.087-.066-.152-.109-.217a1.24 1.24 0 0 0-.173-.151l-.022-.023c-.108-.108-.217-.195-.304-.303-.022-.022-.022-.043-.043-.065a.65.65 0 0 1-.087-.174c0-.216.239-.498 1.063-1.041 3.253-2.407 3.73-5.27 4.142-8.979 1.497-.433 2.602-.889 4.056-1.669a14.787 14.787 0 0 0 2.558-1.736c1.085-.888 1.801-1.713 2.43-2.992 1.951-3.947-.456-7.092-7.591-6.875-1.67.044-3.101.26-4.728.586-2.689.52-5.4.954-8.154 1.236-.63.065-1.258.13-1.887.174-1.821.15-4.554.368-6.355.13-5.053-.716-5.4-6.182 2.408-4.143 1.93.456 3.882.846 5.834 1.106 1.474.192 2.959.286 4.446.282 1.778-.022 3.426-.086 5.031-.932 2.342-1.237 2.126-3.059-1.626-3.275-4.099-.065-6.962-.455-7.83-1.627-.368-.498-.39-1.149 0-1.973.434-.89 1.323-1.974 2.776-3.34-.368.282-1.67 1.17-2.776 2.234-.802.759-1.474 1.605-1.648 2.364-.108.78.499 1.43 1.648 1.93 1.259.542 3.145.954 5.531 1.236 3.817.412 3.275 1.691.911 2.125-2.278.412-4.424.304-6.42-.022-1.757-.281-3.449-.737-5.01-1.15-6.896-2.233-9.845-.194-9.26 2.192.76 3.057 4.771 3.708 7.33 3.795 1.91.065 4.208-.087 6.94-.412 1.909-.217 4.012-.542 6.376-.91 2.732-.457 6.68-1.02 9.325-.24 5.51 1.627 4.186 7.179-1.409 10.171-.954.5-1.41.673-2.776 1.172.13-2.538.065-4.511-.239-5.292-.347-.975-.889-1.496-1.561-1.778-.65-.282-1.54-.434-2.234-.521-1.627-.217-4.445-.369-7.482-.455-4.88-.108-10.366.043-12.557.716-.39.086-.78.238-1.236.498-1.518.89-2.385 2.191-2.558 3.709-.478 4.403 2.211 7.83 5.334 10.496 1.432 1.215 2.732 2.386 2.147 3.384-.195.325-.52.455-.585.737a.252.252 0 0 0 .043.217s0 .022.021.022c.478.78 4.468 1.41 8.155 1.41.434 0 .845 0 1.236-.023l-.065.044zM71.373 23.813c-4.36 0-7.873 3.448-7.873 7.829 0 3.101 1.93 5.898 4.793 7.113.955.39 1.952.607 3.015.607 4.207 0 7.915-3.274 7.915-7.569 0-3.209-1.8-6.072-4.77-7.33a7.638 7.638 0 0 0-3.058-.629l-.022-.021zm0 3.404c1.735 0 3.318 1.107 3.99 2.711.694 1.649.304 3.492-.954 4.75-1.713 1.713-4.445 1.736-6.16.022a4.293 4.293 0 0 1-1.257-3.08c0-.607.108-1.192.347-1.713.737-1.648 2.19-2.668 4.012-2.668l.022-.022zm14.249 11.929V24.029H82.13v15.117h3.491zm-1.779-21.688a2.175 2.175 0 0 0-2.169 2.17c0 1.192.933 2.167 2.125 2.167 1.193 0 2.191-.953 2.191-2.168 0-1.236-.933-2.169-2.147-2.169zm18.391 21.688v-8.307c0-1.15-.109-2.082-.304-2.754-.195-.694-.564-1.345-1.128-1.973-1.257-1.497-3.014-2.256-4.966-2.256-1.951 0-3.752.781-4.966 2.342-1.106 1.345-1.432 2.711-1.432 4.425v8.566h3.514V31.62c0-1.518.022-3.21 1.561-4.012.868-.434 1.843-.456 2.69.022.411.238.737.542.953.91.543.998.565 2.212.565 3.319v7.33h3.491l.022-.043zm10.974 0V35.74c-2.364 0-3.188-.671-3.188-3.1v-5.205h3.188v-3.406h-3.188v-5.312h-3.514v5.313h-2.58v3.405h2.58v5.162c0 1.626.151 3.21 1.215 4.532 1.105 1.345 2.732 1.996 4.9 1.996h.565l.022.021zm-58.513-.022v-9.412h.781c10.54 0 10.974-14.184-.217-14.184-.824 0-1.453.021-1.908.087-.933.13-1.757.607-2.147 1.496-.218.478-.326 1.128-.326 1.974v20.06h3.817v-.021zm0-13.056v-6.853c6.333-.694 7.873 6.875 0 6.853zm-7.482-10.519h-3.817v16.874c0 .477-.043.91-.151 1.323-.11.412-.239.737-.413.976-.1.137-.225.255-.369.347-.13.086-.281.173-.455.238-.173.065-.39.108-.628.13-.24.022-.565.043-.933.065H40.1v3.644a32.026 32.026 0 0 0 1.778-.087c.477-.044.89-.087 1.215-.152.347-.065.65-.173.932-.304.3-.142.584-.316.846-.52.868-.608 1.475-1.344 1.844-2.212.368-.868.542-2.039.542-3.513V15.55h-.044z"></path>
+                    </g>
+                </svg>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="" class="header__link">ABOUT</a></li>
+                        <li class="header__item"><a href="" class="header__link">TALKS</a></li>
+                        <li class="header__item"><a href="" class="header__link">CONTACTS</a></li>
+                        <li class="header__item"><a href="" class="header__link  header__link--lang">EN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="reports">
+        <div class="container">
+            <div class="row">
+                <span class="reports__title">Все доклады</span>
+            </div>
+            <div class="row filter">
+                <div class="filter__key">
+                    <p class="filter__key-text">Ключевые темы</p>
+                    <span class="filter__tag  filter__tag--reset">Reset filter<i class="filter__close  fas  fa-times"></i></span>
+                    <span class="filter__tag  filter__tag--chosen">unexpectednpe<i class="filter__close  fas  fa-times"></i></span>
+                    <span class="filter__tag  filter__tag--chosen">unexpectednpe<i class="filter__close  fas fa-times"></i></span>
+                </div>
+            </div>
+            <div class="row filter__tag-list">
+                <span class="filter__tag">unexpectednpe</span>
+                <span class="filter__tag">unexpectedn</span>
+                <span class="filter__tag">vm</span>
+                <span class="filter__tag">unexpectednpe</span>
+                <span class="filter__tag">unexpectednpe</span>
+                <span class="filter__tag">vm</span>
+                <span class="filter__tag">oomfighting</span>
+                <span class="filter__tag">oomfighting</span>
+                <span class="filter__tag">vm</span>
+                <span class="filter__tag">unexpectednpe</span>
+                <span class="filter__tag">unexpectednpe</span>
+                <span class="filter__tag">oomfighting</span>
+                <span class="filter__tag">unexpectednpe</span>
+                <span class="filter__tag">oomfighting</span>
+            </div>
+        </div>
+        <div class="report">
+            <div class="container">
+                <div class="row  row--justify-between">
+                    <h2 class="report__title">Мультиагентная транспортная модель для ЧМ-2018 в России на Java за 4
+                        месяца, с блэкджеком и эволюционными алгоритмами</h2>
+                    <span class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></span>
+                </div>
+                <div class="row">
+                    <div class="report__tags">
+                        <i class="fas fa-tag"></i>
+                        <span class="report__tag">oomfighting</span>
+                        <span class="report__tag">vm</span>
+                        <span class="report__tag">unexpectednpe</span>
+                    </div>
+                    <article class="report__article">
+                        <div class="report__descr">
+                            <p>
+                                At TransferWise they use Kafka and local database transactions to achieve transactional
+                                behavior across multiple microservices. In this talk Harald will describe their
+                                architecture and design decisions. He'll compare their own solution with other
+                                alternatives and show why they chose to build their own. He'll also give a quick recap
+                                on database transactions and Kafka.
+                            </p>
+                        </div>
+                        <div class="report__info">
+                            <div class="report__info-left">
+                                <span class="report-tooltip  report-tooltip--calendar">
+                                    <i class="report__icon  fas  fa-calendar-alt"></i><span class="report__icon-info">День 1 </span>
+                                </span>
+                                <span class="report-tooltip  report-tooltip--clock">
+                                    <i class="report__icon  far  fa-clock"></i><span class="report__icon-info">16:00 </span>
+                                </span>
+                                <span class="report-tooltip  report-tooltip--arrow">
+                                    <i class="report__icon  fas  fa-location-arrow"></i><span class="report__icon-info">Зал 1 </span> 
+                                </span>
+                                <span class="report-tooltip  report-tooltip--lang">
+                                    <i class="report__icon  fas  fa-globe-americas"></i><span class="report__icon-info">EN</span> 
+                                </span>
+                            </div>
+                            <div class="report__info-right">
+                                <a href="#" class="report__btn">Learn more</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="report-bio">
+                        <div class="report-bio__photo-wrap">
+                            <img src="https://i.pinimg.com/236x/7d/37/3b/7d373b3049029e4f9a6dbbe2e72d2bc5--mens-suits-style-mens-fashion-suits.jpg"
+                                class="report-bio__photo" alt="user">
+                        </div>
+                        <div class="report-bio__about">
+                            <h3 class="report-bio__name">Валентин Петухов</h3>
+                            <p class="report-bio__work">The New York Times</p>
+                            <p class="report-bio__descr">
+                                Мастер создания софта от начала до конца. 
+                                Один из основателей компании Codeborne —
+                                единственной…
+                                <a href="#" class="report-bio__link">Подробнее</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="report-bio">
+                        <div class="report-bio__photo-wrap">
+                            <img src="https://i.pinimg.com/236x/7d/37/3b/7d373b3049029e4f9a6dbbe2e72d2bc5--mens-suits-style-mens-fashion-suits.jpg"
+                                class="report-bio__photo" alt="user">
+                        </div>
+                        <div class="report-bio__about">
+                            <h3 class="report-bio__name">Валентин Петухов</h3>
+                            <p class="report-bio__work">The New York Times</p>
+                            <p class="report-bio__descr">
+                                Мастер создания софта от начала до конца. Один из основателей компании Codeborne —
+                                единственной…
+                                <a href="#" class="report-bio__link">Подробнее</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="report  report--even">
+            <div class="container">
+                <div class="row  row--justify-between">
+                    <h2 class="report__title">Гибкий веб-сервис API с Mu</h2>
+                    <span class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></span>
+                </div>
+                <div class="row">
+                    <div class="report__tags">
+                        <i class="fas fa-tag"></i>
+                        <span class="report__tag">oomfighting</span>
+                        <span class="report__tag">vm</span>
+                        <span class="report__tag">unexpectednpe</span>
+                    </div>
+                    <article class="report__article">
+                        <div class="report__descr">
+                            <p>
+                                Ольга представит библиотеку Mu, позволяющую решить ряд проблем, связанных с разработкой
+                                веб-сервисов на Scala в функциональном стиле.
+                            </p>
+                        </div>
+                        <div class="report__info">
+                            <div class="report__info-left">
+                                <span class="report-tooltip  report-tooltip--calendar">
+                                    <i class="report__icon  fas  fa-calendar-alt"></i><span class="report__icon-info">День 1 </span>
+                                </span>
+                                <span class="report-tooltip  report-tooltip--clock">
+                                    <i class="report__icon  far  fa-clock"></i><span class="report__icon-info">16:00 </span>
+                                </span>
+                                <span class="report-tooltip  report-tooltip--arrow">
+                                    <i class="report__icon  fas  fa-location-arrow"></i><span class="report__icon-info">Зал 1 </span> 
+                                </span>
+                                <span class="report-tooltip  report-tooltip--lang">
+                                    <i class="report__icon  fas  fa-globe-americas"></i><span class="report__icon-info">EN</span> 
+                                </span>
+                            </div>
+                            <div class="report__info-right">
+                                <a href="#" class="report__btn">Learn more</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="report-bio">
+                        <div class="report-bio__photo-wrap">
+                            <img src="https://i.pinimg.com/236x/7d/37/3b/7d373b3049029e4f9a6dbbe2e72d2bc5--mens-suits-style-mens-fashion-suits.jpg"
+                                class="report-bio__photo" alt="user">
+                        </div>
+                        <div class="report-bio__about">
+                            <h3 class="report-bio__name">Валентин Петухов</h3>
+                            <p class="report-bio__work">The New York Times</p>
+                            <p class="report-bio__descr">
+                                Мастер создания софта от начала до конца. Один из основателей компании Codeborne —
+                                единственной…
+                                <a href="#" class="report-bio__link">Подробнее</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="report">
+            <div class="container">
+                <div class="row  row--justify-between">
+                    <h2 class="report__title">Мультиагентная транспортная модель для ЧМ-2018 в России на Java за 4
+                        месяца, с блэкджеком и эволюционными алгоритмами</h2>
+                    <span class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></span>
+                </div>
+                <div class="row">
+                    <div class="report__tags">
+                        <i class="fas fa-tag"></i>
+                        <span class="report__tag">oomfighting</span>
+                        <span class="report__tag">vm</span>
+                        <span class="report__tag">unexpectednpe</span>
+                    </div>
+                    <article class="report__article">
+                        <div class="report__descr">
+                            <p>
+                                At TransferWise they use Kafka and local database transactions to achieve transactional
+                                behavior across multiple microservices. In this talk Harald will describe their
+                                architecture and design decisions. He'll compare their own solution with other
+                                alternatives and show why they chose to build their own. He'll also give a quick recap
+                                on database transactions and Kafka.
+                            </p>
+                        </div>
+                        <div class="report__info">
+                            <div class="report__info-left">
+                                <span class="report-tooltip  report-tooltip--calendar">
+                                    <i class="report__icon  fas  fa-calendar-alt"></i><span class="report__icon-info">День 1 </span>
+                                </span>
+                                <span class="report-tooltip  report-tooltip--clock">
+                                    <i class="report__icon  far  fa-clock"></i><span class="report__icon-info">16:00 </span>
+                                </span>
+                                <span class="report-tooltip  report-tooltip--arrow">
+                                    <i class="report__icon  fas  fa-location-arrow"></i><span class="report__icon-info">Зал 1 </span> 
+                                </span>
+                                <span class="report-tooltip  report-tooltip--lang">
+                                    <i class="report__icon  fas  fa-globe-americas"></i><span class="report__icon-info">EN</span> 
+                                </span>
+                            </div>
+                            <div class="report__info-right">
+                                <a href="#" class="report__btn">Learn more</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="report-bio">
+                        <div class="report-bio__photo-wrap">
+                            <img src="https://i.pinimg.com/236x/7d/37/3b/7d373b3049029e4f9a6dbbe2e72d2bc5--mens-suits-style-mens-fashion-suits.jpg"
+                                class="report-bio__photo" alt="user">
+                        </div>
+                        <div class="report-bio__about">
+                            <h3 class="report-bio__name">Валентин Петухов</h3>
+                            <p class="report-bio__work">The New York Times</p>
+                            <p class="report-bio__descr">
+                                Мастер создания софта от начала до конца. Один из основателей компании Codeborne —
+                                единственной…
+                                <a href="#" class="report-bio__link">Подробнее</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="report-bio">
+                        <div class="report-bio__photo-wrap">
+                            <img src="https://i.pinimg.com/236x/7d/37/3b/7d373b3049029e4f9a6dbbe2e72d2bc5--mens-suits-style-mens-fashion-suits.jpg"
+                                class="report-bio__photo" alt="user">
+                        </div>
+                        <div class="report-bio__about">
+                            <h3 class="report-bio__name">Валентин Петухов</h3>
+                            <p class="report-bio__work">The New York Times</p>
+                            <p class="report-bio__descr">
+                                Мастер создания софта от начала до конца. Один из основателей компании Codeborne —
+                                единственной…
+                                <a href="#" class="report-bio__link">Подробнее</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="ex1" class="modal">
+        <h3 class="modal__name">Валентин Петухов</h3>
+        <p class="modal__city">The New York Times</p>
+        <div class="row">
+            <div class="modal__photo-wrap">
+                <img src="https://i.pinimg.com/236x/7d/37/3b/7d373b3049029e4f9a6dbbe2e72d2bc5--mens-suits-style-mens-fashion-suits.jpg"
+                    class="modal__photo" alt="user">
+            </div>
+            <p class="modal__descr">
+                Десять лет работает над производительностью и масштабируемостью NetCracker OS — ПО, используемого
+                операторами связи для автоматизации процессов управления сетью и сетевым оборудованием. Увлекается
+                вопросами производительности Java и Oracle Database. Автор более десятка улучшений производительности в
+                официальном PostgreSQL JDBC-драйвере.
+            </p>
+        </div>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+      
+      <!-- Link to open the modal -->
+      <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/tipped.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

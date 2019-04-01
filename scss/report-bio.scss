@@ -1,0 +1,71 @@
+.report-bio {
+    display: flex;
+    width: 48.5%;
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: 10px;   
+    box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    border: solid 1.5px #cdcdcd;
+    border-bottom: solid 4px #222494;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+        border: solid 1.5px #222494;
+        border-bottom: solid 4px #222494;
+    }
+
+    &__photo {
+       max-width: 100%; 
+       &-wrap {
+        width: 120px;
+        height: 120px;
+        border-radius: 15%;
+        overflow: hidden;
+       }
+    }
+
+    &__about {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    &__name {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    &__work {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    @media (max-width: $screen-lg) {
+
+        & {
+            width: 48%;   
+        }
+
+        &__descr {
+            font-size: 12px;
+        }
+
+        &__photo {
+            max-width: 100%; 
+            &-wrap {
+             width: 80px;
+             height: 80px;
+             border-radius: 15%;
+             overflow: hidden;
+            }
+         }
+
+         &__name {
+             font-size: 14px;
+         }
+
+         &__work {
+             font-size: 14px;
+         }
+
+    }
+}

@@ -1,0 +1,39 @@
+.header {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+    padding-bottom: 13px;
+
+    display: flex;
+    &__logo {
+        width: 76px;
+        height: 42px;
+    }
+
+    &__wrapper {
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+    } 
+
+    &__item {
+       margin-right: 19px; 
+    }
+
+    &__link {
+        color: inherit;
+        font-weight: 500;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &--lang {
+            margin-left: 25px;
+        }
+    }
+}
