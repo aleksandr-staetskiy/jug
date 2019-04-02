@@ -744,6 +744,65 @@ nav ul.sub li a:hover {
     margin-top: 20px;
   }
 }
+@media (max-width: 540px) {
+  /* line 104, ../scss/report.scss */
+  .report__title {
+    max-width: 85%;
+    font-size: 20px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 110, ../scss/report.scss */
+  .report__favorit {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 115, ../scss/report.scss */
+  .report__star {
+    font-size: 30px;
+  }
+  /* line 119, ../scss/report.scss */
+  .report__article {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  /* line 124, ../scss/report.scss */
+  .report__descr {
+    font-size: 16px;
+  }
+  /* line 128, ../scss/report.scss */
+  .report__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 130, ../scss/report.scss */
+  .report__info-left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  /* line 137, ../scss/report.scss */
+  .report__info-right {
+    width: 100%;
+  }
+  /* line 143, ../scss/report.scss */
+  .report-tooltip {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+  /* line 148, ../scss/report.scss */
+  .report__btn {
+    margin: 0 auto;
+    width: 134px;
+  }
+}
 
 /* line 1, ../scss/report-bio.scss */
 .report-bio {
@@ -820,6 +879,12 @@ nav ul.sub li a:hover {
   /* line 66, ../scss/report-bio.scss */
   .report-bio__work {
     font-size: 14px;
+  }
+}
+@media (max-width: 540px) {
+  /* line 1, ../scss/report-bio.scss */
+  .report-bio {
+    width: 100%;
   }
 }
 
