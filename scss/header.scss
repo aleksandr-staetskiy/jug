@@ -1,13 +1,16 @@
 .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: #fff;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
     padding-top: 15px;
     padding-bottom: 13px;
-
     display: flex;
-    &__logo {
-        width: 76px;
-        height: 42px;
-    }
+
+    
 
     &__wrapper {
         justify-content: space-between;
@@ -41,10 +44,10 @@
     //     display: block;
     // }
 
-    // @media (max-width: $screen-sm) {
-    //     &__nav {
-    //         display: none;
-    //     }
+    @media (max-width: $screen-sm) {
+        &__list{
+            display: none;
+        }
 
-    // }
+    }
 }

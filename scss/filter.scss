@@ -25,6 +25,10 @@
         border: solid 1px #23198f;
     }
 
+    &--chosen {
+      color: $active-link;
+    }
+
     &--reset {
         border: none;
         margin-left: 20px;
