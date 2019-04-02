@@ -48,6 +48,7 @@ a {
   }
 }
 
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -55,21 +56,18 @@ a {
   margin-left: -15px;
 }
 
+@media (max-width: $screen-sm) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
 .row--justify-between {
   justify-content: space-between;
 }
 
-.set-tooltip {
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #444;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 20px;
-  z-index: 99999;
-}
+
 
 .lol {
   text-align: center!important;

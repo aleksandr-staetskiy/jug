@@ -54,7 +54,7 @@ a:hover {
     max-width: 1140px;
   }
 }
-/* line 51, ../scss/global.scss */
+/* line 52, ../scss/global.scss */
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,29 +65,405 @@ a:hover {
   margin-left: -15px;
 }
 
-/* line 58, ../scss/global.scss */
+@media (max-width: 540px) {
+  /* line 60, ../scss/global.scss */
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+/* line 66, ../scss/global.scss */
 .row--justify-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-/* line 62, ../scss/global.scss */
-.set-tooltip {
+/* line 72, ../scss/global.scss */
+.lol {
+  text-align: center !important;
+}
+
+/* line 1, ../scss/burger-menu.scss */
+.burger {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* line 11, ../scss/burger-menu.scss */
+.burger span {
+  position: relative;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -1.5px;
+}
+
+/* line 26, ../scss/burger-menu.scss */
+.burger span, .burger span::before, .burger span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #0777ba;
+  outline: 1px solid transparent;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: background-color, transform;
+  transition-property: background-color, transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* line 42, ../scss/burger-menu.scss */
+.burger span::before, .burger span::after {
+  position: absolute;
+  content: "";
+}
+
+/* line 47, ../scss/burger-menu.scss */
+.burger span::before {
+  top: -9px;
+}
+
+/* line 49, ../scss/burger-menu.scss */
+.burger span::after {
+  top: 9px;
+}
+
+/* line 51, ../scss/burger-menu.scss */
+.burger.clicked span {
+  background-color: transparent;
+}
+
+/* line 53, ../scss/burger-menu.scss */
+.burger.clicked span::before {
+  -webkit-transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
+}
+
+/* line 61, ../scss/burger-menu.scss */
+.burger.clicked span::after {
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* line 69, ../scss/burger-menu.scss */
+.burger.clicked span:before, .burger.clicked span:after {
+  background-color: #ffffff;
+}
+
+/* line 71, ../scss/burger-menu.scss */
+.burger:hover {
+  cursor: pointer;
+}
+
+/*  NAV
+========================================== */
+/* line 76, ../scss/burger-menu.scss */
+nav {
+  background: #7e67cefa;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 515px;
+  width: 100%;
+  padding: 100px 40px 60px 40px;
+  overflow-y: auto;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* line 98, ../scss/burger-menu.scss */
+nav.show {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/* line 106, ../scss/burger-menu.scss */
+nav.show ul.main li {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* line 115, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(1) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+/* line 117, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+/* line 119, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+/* line 121, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+/* line 123, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(5) {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+/* line 125, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(6) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+/* line 127, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(7) {
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+/* line 129, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(8) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+/* line 131, ../scss/burger-menu.scss */
+nav.show ul.main li:nth-child(9) {
+  -webkit-transition-delay: 1.35s;
+          transition-delay: 1.35s;
+}
+
+/* line 133, ../scss/burger-menu.scss */
+nav.show .about, nav.show .social, nav.show ul.sub {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  -webkit-transition-delay: .85s;
+          transition-delay: .85s;
+}
+
+@media (min-width: 667px) {
+  /* line 144, ../scss/burger-menu.scss */
+  nav {
+    padding: 120px 90px 70px 90px;
+  }
+}
+/* line 147, ../scss/burger-menu.scss */
+nav ul.main {
+  list-style-type: none;
+}
+
+/* line 149, ../scss/burger-menu.scss */
+nav ul.main li {
+  margin-bottom: 20px;
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
   opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 163, ../scss/burger-menu.scss */
+nav ul.main li:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* line 165, ../scss/burger-menu.scss */
+nav ul.main li a {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: block;
+  letter-spacing: 5px;
+  font-weight: 600;
+  padding: 10px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 181, ../scss/burger-menu.scss */
+nav ul.main li a span {
+  color: #795e88;
+}
+
+/* line 183, ../scss/burger-menu.scss */
+nav ul.main li a:hover {
+  color: #c0c0c0;
+}
+
+/* line 185, ../scss/burger-menu.scss */
+nav .about {
+  margin-top: 40px;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 199, ../scss/burger-menu.scss */
+nav .about p {
+  color: #ffffff;
+  font-family: "Spectral", serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  line-height: 170%;
+}
+
+/* line 207, ../scss/burger-menu.scss */
+nav .social {
+  margin-top: 40px;
+  position: relative;
+  padding-bottom: 30px;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 223, ../scss/burger-menu.scss */
+nav .social:after {
+  content: "";
+  width: 230px;
+  height: 2px;
+  background-color: #b7ac7f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 233, ../scss/burger-menu.scss */
+nav .social a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+}
+
+/* line 240, ../scss/burger-menu.scss */
+nav .social a:last-of-type {
+  margin-right: 0px;
+}
+
+/* line 242, ../scss/burger-menu.scss */
+nav .social a:hover svg path, nav .social a:hover svg circle {
+  fill: #b7ac7f;
+}
+
+/* line 244, ../scss/burger-menu.scss */
+nav .social a svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 249, ../scss/burger-menu.scss */
+nav .social a svg path, nav .social a svg circle {
+  fill: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 257, ../scss/burger-menu.scss */
+nav ul.sub {
+  list-style-type: none;
+  margin-top: 40px;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 272, ../scss/burger-menu.scss */
+nav ul.sub li {
+  margin-bottom: 10px;
+}
+
+/* line 274, ../scss/burger-menu.scss */
+nav ul.sub li:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* line 276, ../scss/burger-menu.scss */
+nav ul.sub li a {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 288, ../scss/burger-menu.scss */
+nav ul.sub li a:hover {
+  color: #b7ac7f;
+}
+
+/*  OVERLAY
+========================================== */
+/* line 293, ../scss/burger-menu.scss */
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
-  background: #444;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 20px;
-  z-index: 99999;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #403544;
+  opacity: 0;
+  visibility: hidden;
 }
 
-/* line 74, ../scss/global.scss */
-.lol {
-  text-align: center !important;
+/* line 309, ../scss/burger-menu.scss */
+.overlay.show {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+/* menu setup is finished
+========================================= */
+/* line 317, ../scss/burger-menu.scss */
+.mobile-burger {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  /* line 324, ../scss/burger-menu.scss */
+  .mobile-burger {
+    display: block;
+  }
 }
 
 /* line 1, ../scss/header.scss */
@@ -211,12 +587,46 @@ a:hover {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 540px) {
+  /* line 66, ../scss/filter.scss */
+  .filter__key {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 69, ../scss/filter.scss */
+  .filter__key-text {
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+  }
+  /* line 75, ../scss/filter.scss */
+  .filter__tag {
+    margin-right: 15px;
+  }
+  /* line 77, ../scss/filter.scss */
+  .filter__tag--chosen {
+    padding: 8px;
+    color: #206eff;
+  }
+  /* line 81, ../scss/filter.scss */
+  .filter__tag--reset {
+    padding: 8px;
+    background-color: #cecbcb74;
+    margin-left: 0;
+  }
+}
 
 /* line 2, ../scss/reports.scss */
 .reports__title {
   font-size: 40px;
   font-weight: bold;
   margin-top: 20px;
+}
+@media (max-width: 540px) {
+  /* line 10, ../scss/reports.scss */
+  .reports__title {
+    font-size: 28px;
+  }
 }
 
 /* line 1, ../scss/report.scss */

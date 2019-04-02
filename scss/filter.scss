@@ -59,7 +59,31 @@
       font-size: 14px;
       margin-bottom: 15px;
     }
-  
-
 }
+
+  @media (max-width: $screen-sm) {
+
+    &__key {
+      flex-wrap: wrap;
+    }
+    &__key-text {
+      width: 100%;
+      font-size: 20px;
+      color: #000;
+    }
+
+    &__tag {
+      margin-right: 15px; 
+      &--chosen {
+        padding: 8px;
+        color: $active-link;
+      }
+      &--reset {
+        padding: 8px;
+        background-color: #cecbcb74;
+        margin-left: 0;
+      }
+    }
+  
+  }
 }
