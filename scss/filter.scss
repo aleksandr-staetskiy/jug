@@ -20,6 +20,11 @@
     cursor: pointer;
     transition: all 0.4s ease;
 
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     &:hover {
         color: $active-link;
         border: solid 1px #23198f;

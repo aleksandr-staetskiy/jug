@@ -1,5 +1,4 @@
 .report {
-  margin-top: 40px;
   background: $report-bg;
   box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
@@ -19,6 +18,8 @@
     width: 30%;
     padding-top: 30px;
     text-align: right;
+    border: none;
+    background: none;
   }
 
   &__star {

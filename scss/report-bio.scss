@@ -1,14 +1,15 @@
 .report-bio {
     display: flex;
-    width: 48.5%;
+    width: 48%;
     padding: 15px;
-    margin-top: 25px;
-    margin-left: 10px;   
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;   
     box-shadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
     background-color: #fafafa;
     border: solid 1.5px #cdcdcd;
     border-bottom: solid 4px #222494;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover {
         border: solid 1.5px #222494;
         border-bottom: solid 4px #222494;

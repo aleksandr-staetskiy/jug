@@ -6,10 +6,8 @@ $(document).ready(function() {
   });
 
   // burger menu
-  $('.burger, .overlay').click(function(){
-    $('.burger').toggleClass('clicked');
-    $('.overlay').toggleClass('show');
-    $('nav').toggleClass('show');
-    $('body').toggleClass('overflow');
-  });
-  
+  var burgerIcon = document.querySelectorAll('.burger-icon')[0];
+    
+  burgerIcon.addEventListener('click', function() {
+    document.body.classList.toggle('nav-open');
+  })

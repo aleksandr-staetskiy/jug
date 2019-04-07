@@ -67,27 +67,18 @@
                     </g>
                 </svg>
                 </a>
-                <ul class="header__list">
-                    <li class="header__item"><a href="" class="header__link">ABOUT</a></li>
-                    <li class="header__item"><a href="" class="header__link">TALKS</a></li>
-                    <li class="header__item"><a href="" class="header__link">CONTACTS</a></li>
-                    <li class="header__item"><a href="" class="header__link  header__link--lang">EN</a></li>
-                </ul>
-            </div>
-            <!-- mobile burger menu -->
-            <div class="mobile-burger">
-                <nav>
-                    <ul class="main">
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">TALKS</a></li>
-                        <li><a href="#">CONTACTS</a></li>
-                        <li><a href="#">EN</a></li>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="" class="header__link">ABOUT</a></li>
+                        <li class="header__item"><a href="" class="header__link">TALKS</a></li>
+                        <li class="header__item"><a href="" class="header__link">CONTACTS</a></li>
+                        <li class="header__item"><a href="" class="header__link  header__link--lang">EN</a></li>
                     </ul>
                 </nav>
-                <div class="burger">
-                    <span></span>
-                </div>
-                <div class="overlay"></div>
+            </div>
+            <!-- mobile burger menu -->
+            <div class="burger-icon">
+                <span class="burger"></span>
             </div>
         </div>
     </header>
@@ -103,30 +94,30 @@
                     <span class="filter__tag  filter__tag--chosen">unexpectednpe<i class="filter__close  fas  fa-times"></i></span>
                     <span class="filter__tag  filter__tag--chosen">unexpectednpe<i class="filter__close  fas fa-times"></i></span>
                 </div>
-            </div>
-            <div class="row filter__tag-list">
-                <span class="filter__tag">unexpectednpe</span>
-                <span class="filter__tag">unexpectedn</span>
-                <span class="filter__tag">vm</span>
-                <span class="filter__tag">unexpectednpe</span>
-                <span class="filter__tag">unexpectednpe</span>
-                <span class="filter__tag">vm</span>
-                <span class="filter__tag">oomfighting</span>
-                <span class="filter__tag">oomfighting</span>
-                <span class="filter__tag">vm</span>
-                <span class="filter__tag">unexpectednpe</span>
-                <span class="filter__tag">unexpectednpe</span>
-                <span class="filter__tag">oomfighting</span>
-                <span class="filter__tag">unexpectednpe</span>
-                <span class="filter__tag">oomfighting</span>
-            </div>
+                <div class="filter__tag-list">
+                    <span class="filter__tag">unexpectednpe</span>
+                    <span class="filter__tag">unexpectedn</span>
+                    <span class="filter__tag">vm</span>
+                    <span class="filter__tag">unexpectednpe</span>
+                    <span class="filter__tag">unexpectednpe</span>
+                    <span class="filter__tag">vm</span>
+                    <span class="filter__tag">oomfighting</span>
+                    <span class="filter__tag">oomfighting</span>
+                    <span class="filter__tag">vm</span>
+                    <span class="filter__tag">unexpectednpe</span>
+                    <span class="filter__tag">unexpectednpe</span>
+                    <span class="filter__tag">oomfighting</span>
+                    <span class="filter__tag">unexpectednpe</span>
+                    <span class="filter__tag">oomfighting</span>
+                </div>
+            </div>    
         </div>
         <div class="report">
             <div class="container">
                 <div class="row  row--justify-between">
                     <h2 class="report__title">Мультиагентная транспортная модель для ЧМ-2018 в России на Java за 4
                         месяца, с блэкджеком и эволюционными алгоритмами</h2>
-                    <span class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></span>
+                    <button class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></button>
                 </div>
                 <div class="row">
                     <div class="report__tags">
@@ -135,7 +126,7 @@
                         <span class="report__tag">vm</span>
                         <span class="report__tag">unexpectednpe</span>
                     </div>
-                    <article href="#ex2" rel="modal:open" class="report__article"> 
+                    <article class="report__article"> 
                         <div class="report__descr">
                             <p>
                                 At TransferWise they use Kafka and local database transactions to achieve transactional
@@ -203,7 +194,7 @@
             <div class="container">
                 <div class="row  row--justify-between">
                     <h2 class="report__title">Гибкий веб-сервис API с Mu</h2>
-                    <span class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></span>
+                    <button class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></button>
                 </div>
                 <div class="row">
                     <div class="report__tags">
@@ -262,7 +253,7 @@
                 <div class="row  row--justify-between">
                     <h2 class="report__title">Мультиагентная транспортная модель для ЧМ-2018 в России на Java за 4
                         месяца, с блэкджеком и эволюционными алгоритмами</h2>
-                    <span class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></span>
+                        <button class="report__favorit">В избранное<i class="report__star  fas  fa-star"></i></button>
                 </div>
                 <div class="row">
                     <div class="report__tags">
@@ -351,12 +342,12 @@
                 официальном PostgreSQL JDBC-драйвере.
             </p>
         </div>
-        <a href="#" rel="modal:close">Close</a>
     </div>
     <!-- report modal places here -->
     <div id="ex2" class="modal">
-        <div class="row modal-report">
-            <h3 class="modal-report__tite">Мультиагентная транспортная модель для ЧМ-2018 в России на Java за 4 месяца, с
+       <div class="modal__inner">
+        <div class="modal-report">
+            <h3 class="modal-report__title">Мультиагентная транспортная модель для ЧМ-2018 в России на Java за 4 месяца, с
                 блэкджеком и эволюционными алгоритмами
             </h3>
             <p class="modal-report__descr">
@@ -371,12 +362,9 @@
                 вероятность ошибки. В ряде случаев удаётся довести процесс до идеала: каждая команда, которую вы отдаёте
                 среде разработки, модифицирует код, сохраняя семантику. В таком случае шанс ошибки снижается практически до
                 нуля.
-        
-                Мы посмотрим на примерах, как можно добиться этого при рефакторинге Java-кода в среде IntelliJ IDEA и каким
-                образом можно заставить среду рефакторить атомарно, если она сопротивляется.
             </p>
         </div>
-        <a href="#" rel="modal:close">Close</a>
+       </div>
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
